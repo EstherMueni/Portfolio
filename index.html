@@ -5,9 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
-    <title>Dev server</title>
+    <title>Esther Kimatu</title>
   </head>
   <body>
+     <!-- -----------------HEADER SECTION--------------------------- -->
    <header class="header">
     <nav>
       <ul class="header__menu">
@@ -22,8 +23,8 @@
         </li>
         <li class="header__line"></li>
         <li>
-          <button class="header__sun">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+          <button id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
             </svg>
           </button>
@@ -40,8 +41,36 @@
       </button>
     </nav>
    </header>
+   <!-- --------------Mobile Navigation---------------  -->
+   <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button id="theme-toggle" class="mobile-nav__sun">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+          </svg>
+        </button>
+      </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="">Resume</a>
+        </li>
+      </ul>
+    </nav>
+   </div>
+    <!-- --------------End Of Mobile Navigation---------------  -->
   <main>
-    <!-- HERO SECTION -->
+    <!-- -----------------HERO SECTION--------------------------- -->
    <section class="hero container">
     <img class="hero__img"  src="/ess.jpeg" alt="profile picture">
     <h2 class="hero__subtitle">Hi, I'm Esther 👋🏽</h2>
@@ -50,8 +79,8 @@
     <a class="hero__button btn" href="">Reach Out</a>
    </section>
 
-   <!-- ABOUT SECTION -->
-   <section class="about container section">
+   <!-- ------------------ABOUT SECTION------------------ -->
+   <section id="about" class="about container section">
     <div class="about___content">
     <h2 class="about__title">About</h2>
     <p class="about__description">Hello, I'm Esther, a passionate and aspiring front-end developer. I am excited about building web applications that are not only functional but also visually appealing and user-friendly.</p><br>
@@ -74,12 +103,16 @@
     </div>
 
     <div class="about__img-wrapper">
-      <img class="about__img" src="/about.JPG.jpg" alt="About picture">
+      <img class="about__img lazy"
+      src="https://fakeimg.pl/3024x1552"
+       data-src="/about.JPG.jpg"
+        alt="profile picture"
+        />
     </div>
    </section>
 
-   <!-- FEATUREED SECTION -->
-   <section class="featured container section">
+   <!-- -------------------FEATURED SECTION --------------------- -->
+   <section id="featured" class="featured container section">
     <h3 class="featured__subtitle">Featured project</h3>
     <div class="featured__wrapper">
       <h2 class="featured__title">Safe Travels</h2>
@@ -127,33 +160,53 @@
     </div>
     <div class="featured__img-container">
       <div class="featured__img-wrapper">
-        <img src="/placeholder.png" alt="">
+        <img
+        class="lazy"
+        src="https://fakeimg.pl/2522x1552"
+        data-src="/placeholder.png" alt="safe travels"
+        />
       </div>
       <div class="featured__img-wrapper">
-        <img src="/placeholder.png" alt="">
+        <img
+        class="lazy"
+        src="https://fakeimg.pl/2522x1552"
+        data-src="/placeholder.png" alt="safe travels"
+         />
       </div>
       <div class="featured__img-wrapper">
-        <img src="/placeholder.png" alt="">
+        <img
+        class="lazy"
+        src="https://fakeimg.pl/2522x1552"
+        data-src="/placeholder.png" alt="safe travels"
+        />
       </div>
       <div class="featured__img-wrapper">
-        <img src="/placeholder.png" alt="">
+        <img class="lazy"
+        src="https://fakeimg.pl/2522x1552"
+        data-src="/placeholder.png" alt="safe travels"
+        />
       </div>
     </div>
    </section>
 
+   <!-- ---------------WORK SECTION-------------------- -->
 <section class="work__container-section">
     <h2 class="work__title">Upcoming projects</h2>
     <p class="work__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt voluptas quam laudantium, et eligendi dignissimos esse suscipit doloremque odit, cumque quos alias molestiae blanditiis iusto repudiandae, est tempore quaerat porro?</p>
 
   <div class="work__container">
-
   <!-- Project 1 -->
   <h3 class="work__project-title">Responsive Landing Page</h3>
   <div class="work__img-wrapper work__image1">
-   <img src="/1.jpeg" alt=" responsive landing page website">
+   <img
+    class="lazy"
+    src="https://fakeimg.pl/612x459"
+    data-src="/1.jpeg"
+    alt="responsive landing page website"
+    />
   </div>
   <div class="work__project work__content1">
-    <h3 class="work__project-subtitle"></h3>
+    <h3 class="work__project-subtitle">Responsive Landing Page</h3>
     <p class="work__project-description1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus a, labore asperiores nihil autem ad, placeat magnam cum nam recusandae aspernatur eaque hic omnis tempora, odio voluptate amet quis provident!</p>
     <p class="work__project-description1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab labore sapiente similique adipisci, repellendus est quaerat sit fugit harum voluptatem rerum reprehenderit autem soluta fugiat optio nulla qui commodi! Facere?</p>
    <a class="btn work__project-btn" href="#">website</a>
@@ -163,7 +216,12 @@
        <!-- Project 2 -->
        <h3 class="work__project-title">Weather App</h3>
        <div class="work__img-wrapper work__image2">
-        <img src="/2.jpeg" alt=" weather App">
+        <img
+        class="lazy"
+        src="https://fakeimg.pl/612x409"
+        data-src="/2.jpeg"
+        alt=" weather App"
+        />
        </div>
        <div class="work__project work__content2">
         <h3 class="work__project-subtitle">Weather App</h3>
@@ -175,7 +233,12 @@
         <!-- Project 3 -->
         <h3 class="work__project-title">To-Do List</h3>
         <div class="work__img-wrapper work__image3">
-         <img src="/3.jpeg" alt=" To-Do List">
+         <img
+         class="lazy"
+         src="https://fakeimg.pl/612x344"
+         data-src="/3.jpeg"
+         alt=" To-Do List"
+         />
         </div>
         <div class="work__project work__content3">
           <h3 class="work__project-subtitle">To-Do List</h3>
@@ -187,7 +250,12 @@
         <!-- Project 4 -->
         <h3 class="work__project-title">Social Media Dashboard</h3>
         <div class="work__img-wrapper work__image4">
-         <img src="/4.jpeg" alt=" Social Media Dashboard">
+         <img
+         class="lazy"
+         src="https://fakeimg.pl/612x410"
+         data-src="/4.jpeg"
+         alt=" Social Media Dashboard"
+         />
         </div>
         <div class="work__project work__content4">
           <h3 class="work__project-subtitle">Social Media Dashboard</h3>
@@ -197,9 +265,17 @@
         </div>
   </div>
 </section>
-   <!-- <section></section>  -->
+
+   <section id="contact" class="contact__container-section">
+    <h2 class="contact__title">Get In Contact</h2>
+    <p class="contact__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique facere saepe animi officia ab pariatur, ratione deleniti harum molestias alias velit eos omnis beatae in nobis veniam quaerat aspernatur consequuntur.</p>
+    <a class="contact__btn btn" href="mailto:emueni97@gmail.com" target="_blank">Contact Me</a>
+   </section>
+
  </main>
-   <!-- <footer></footer> -->
+   <footer class="footer__container-section">
+    <h3 class="footer__title">-----Esther Kimatu-----</h3>
+   </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

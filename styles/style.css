@@ -37,6 +37,15 @@
 html{
   scroll-behavior: smooth;
 }
+
+.light-mode {
+  --clr-light: #082f49;
+  --clr-dark: #f1f5f9;
+  --clr-cyan50: #cffafe;
+  --clr-cyan500: #06b6d4;
+  --clr-cyan800: #155e75;
+}
+
 body{
   font-family: 'General Sans', sans-serif;
   background-color: var(--clr-cyan800);
