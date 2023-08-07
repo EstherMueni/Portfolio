@@ -79,3 +79,18 @@ a{
 strong{
   color: var(--clr-yellow); /* Using --clr-yellow for the color of <strong> elements */
 }
+
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-red);
+  outline: 1px solid var(--clr-red);
+}
