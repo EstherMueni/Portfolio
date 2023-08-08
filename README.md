@@ -41,3 +41,4 @@ Contributions and feedback are welcome. Please open an issue or submit a pull re
 ## Future Improvements
 - Add more projects to the showcase
 - Improve accessibility
+# Esther-Kimatu-Porfolio
