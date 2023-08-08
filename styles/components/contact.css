@@ -1,4 +1,4 @@
-.contact__container-section {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,56 +7,55 @@
   gap: 1rem;
 }
 
-
 .contact__title {
-font-size: var(--size-2xl);
-color: var(--clr-yellow);
-text-transform: capitalize;
+  font-size: var(--size-2xl);
+  color: var(--clr-light);
+  text-transform: capitalize;
 }
 
 .contact__description {
-font-size: var(--size-sm);
-color: var(--clr-light);
-max-width: 60ch;
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  max-width: 60ch;
 }
 
 .contact__btn {
   font-size: var(--size-sm);
 }
-/* --------------------------MEDIA QUERIES --------------------------------------- */
-/*     xs     */
- @media (min-width: 475px) {
-  .contact__container-section {
+
+/* xs */
+@media (min-width: 475px) {
+  .contact {
     gap: 1.5rem;
   }
 
   .contact__title {
-  font-size: var(--size-3xl);
+    font-size: var(--size-3xl);
   }
 
   .contact__description {
-  font-size: var(--size-base);
+    font-size: var(--size-base);
   }
 
   .contact__btn {
     font-size: var(--size-base);
   }
- }
+}
 
-/*     sm    */
- /* @media (min-width: 640px) {} */
+/* sm */
+/* @media (min-width: 640px) {} */
 
-/*     md     */
- /* @media (min-width: 768px) {} */
+/* md */
+/* @media (min-width: 768px) {} */
 
-/*     lg     */
+/* lg */
 @media (min-width: 1024px) {
   .contact__title {
-  font-size: var(--size-4xl);
+    font-size: var(--size-4xl);
   }
 
   .contact__description {
-  font-size: var(--size-lg);
+    font-size: var(--size-lg);
   }
 
   .contact__btn {
@@ -64,24 +63,24 @@ max-width: 60ch;
   }
 }
 
-/*     xl     */
- @media (min-width: 1280px) {
-  .contact__container-section {
+/* xl */
+@media (min-width: 1280px) {
+  .contact {
     gap: 2rem;
   }
 
   .contact__title {
-  font-size: var(--size-5xl);
+    font-size: var(--size-5xl);
   }
 
   .contact__description {
-  font-size: var(--size-2xl);
+    font-size: var(--size-xl);
   }
 
   .contact__btn {
-    font-size: var(--size-2xl);
+    font-size: var(--size-xl);
   }
- }
+}
 
-/*     2xl     */
+/* 2xl */
 /* @media (min-width: 1536px) {} */
