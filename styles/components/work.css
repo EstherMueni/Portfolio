@@ -94,6 +94,7 @@
 
   .work__project-btn {
     font-size: var(--size-base);
+    margin-top: 2em;
   }
 }
 
